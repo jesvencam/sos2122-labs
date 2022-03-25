@@ -8,6 +8,11 @@ app.use(bodyParser.json());
 
 const BASE_API_URL = "/api/v1";
 
+
+app.get("/time",(req,res)=>{
+    console.log("Requested / route");
+    res.send("<html><body><h1>"+new Date()+"<h1></body></html>")
+});
 var contacts = [
     {
         name : "peter",
