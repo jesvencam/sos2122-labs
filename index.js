@@ -4,6 +4,13 @@ const bodyParser = require("body-parser");
 const app = express()
 const port = process.env.PORT || 8080 ;
 
+//////////////
+const backend = require("./src/back");
+
+backend(app);
+
+
+//////////////
 app.use(bodyParser.json());
 
 const BASE_API_URL = "/api/v1";
