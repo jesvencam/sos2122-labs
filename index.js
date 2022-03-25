@@ -13,6 +13,7 @@ app.get("/time",(req,res)=>{
     console.log("Requested / route");
     res.send("<html><body><h1>"+new Date()+"<h1></body></html>")
 });
+
 var contacts = [
     {
         name : "peter",
@@ -82,6 +83,15 @@ console.log(`Server ready at port ${port}`)
 });
 
 
+
+
+//#########
+//L06
+
+app.get("/api",(req,res)=>{
+    res.send({result:true});
+
+});
 
 
 
