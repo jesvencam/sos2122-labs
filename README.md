@@ -1,11 +1,3 @@
-# Package L04
-This is my first package 
+# Package L07
+This is my L07
 
-
-## Install 
-```npm install````
-
-## Start
-```
-npm
-```
